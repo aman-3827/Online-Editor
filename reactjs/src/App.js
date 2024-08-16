@@ -1,9 +1,15 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 
 
 const App = () => {
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(100);
+
+  useEffect(() => {
+    setCounter(100);
+    }
+  )
+
 
   const isUserLoggedIN = true;
   return (
