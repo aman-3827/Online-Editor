@@ -6,8 +6,9 @@ const App = () => {
   const [counter, setCounter] = useState(100);
 
   useEffect(() => {
-    setCounter(100);
-    }
+    // setCounter(100);
+    console.log("You've changed the counter to => " + counter);
+    },[counter]
   )
 
 
